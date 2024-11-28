@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for Cristiano Ronaldo fans.">
+    <meta name="keywords" content="Contact, Cristiano Ronaldo, Fans">
+    <title>Contact Us - Ronaldo Fan Page</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Cristiano Ronaldo - The Football Legend</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Biography</a></li>
+            <li class="dropdown">
+                <a href="gallery.html">Gallery</a>
+                <ul class="dropdown-menu">
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="media.html">Media</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="container my-5">
+        <section>
+            <h2 class="text-center mb-4">We'd Love to Hear From You</h2>
+            <form class="row g-3" action="#" method="POST" aria-label="Contact Ronaldo Fan Page">
+                
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required aria-required="true">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required aria-required="true">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="visit-date" class="form-label">Preferred Date for Contact:</label>
+                    <input type="date" class="form-control" id="visit-date" required aria-required="true">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="favorite-club" class="form-label">Favorite Club Ronaldo Played For:</label>
+                    <select id="favorite-club" class="form-select" required aria-required="true">
+                        <option value="">Select a club</option>
+                        <option value="manu">Manchester United</option>
+                        <option value="realmadrid">Real Madrid</option>
+                        <option value="juventus">Juventus</option>
+                        <option value="sporting">Sporting CP</option>
+                        <option value="alnassr">Al-Nassr</option>
+                    </select>
+                </div>
+
+                <div class="col-12">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" class="form-control" rows="4" placeholder="Enter your message" required aria-required="true"></textarea>
+                </div>
+
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary px-5">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Ronaldo Fan Page</p>
+    </footer>
+
+</body>
+</html>
